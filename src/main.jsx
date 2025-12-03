@@ -1,0 +1,20 @@
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import { RouterProvider } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
+import { router } from "./Router/Router";
+import FloatingWhatsApp from "./components/shared/FloatingWhatsApp";
+
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <>
+      <Toaster position="top-center" reverseOrder={false} />
+      <RouterProvider router={router} />
+      <FloatingWhatsApp
+        phoneNumber="14379003996"
+        message="Hello! How can I help you?"
+      />
+    </>
+  </StrictMode>
+);
