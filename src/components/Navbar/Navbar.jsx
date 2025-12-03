@@ -1,7 +1,9 @@
+"use client";
+
 import React, { useState } from "react";
 import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
-import logo2 from "/assets/website_big_logo.png";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "@/lib/navigation";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -110,14 +112,15 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center">
           <Link to="/">
-            <img
-              src={logo2}
+            <Image
+              src="/assets/website_big_logo.png"
               alt="Asian Import and Export"
+              width={150}
+              height={64}
               className="h-16 w-auto"
             />
           </Link>
         </div>
-
         {/* Desktop Navigation */}
         <div className="hidden lg:flex items-center space-x-7">
           <Link to="/" className={getLinkClasses("/")}>

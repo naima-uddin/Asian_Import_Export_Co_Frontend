@@ -1,5 +1,7 @@
+"use client";
+
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "@/lib/navigation";
 
 const ProductList = ({ category, subcategory, selectedBrand }) => {
   const [showAllProducts, setShowAllProducts] = useState(false);

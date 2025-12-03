@@ -1,5 +1,7 @@
+"use client";
+
 import React from "react";
-import { Link } from "react-router";
+import { Link } from "@/lib/navigation";
 
 const WebsiteLogo = () => {
   return (

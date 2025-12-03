@@ -1,6 +1,8 @@
+"use client";
+
 // pages/SearchResults.jsx
 import React, { useState, useEffect } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "@/lib/navigation";
 import ProductList from "../DynamicProductCatalog/ProductList";
 
 const SearchResults = () => {

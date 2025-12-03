@@ -1,5 +1,8 @@
+"use client";
+
 import React, { useEffect, useState, useRef } from "react";
-import { useLocation, useParams, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "@/lib/navigation";
+import { useParams } from "next/navigation";
 import {
   FaArrowLeft,
   FaPlus,

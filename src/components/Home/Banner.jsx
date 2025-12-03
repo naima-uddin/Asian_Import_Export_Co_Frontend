@@ -1,5 +1,7 @@
+"use client";
+
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router";
+import { Link } from "@/lib/navigation";
 
 const Banner = () => {
   const [displayText, setDisplayText] = useState("");

@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useEffect } from "react";
 import {
   CheckCircle,
@@ -7,7 +9,7 @@ import {
   Star,
   ArrowRight,
 } from "lucide-react";
-import { Link } from "react-router";
+import { Link } from "@/lib/navigation";
 
 const WhyChooseUs = () => {
   const [isVisible, setIsVisible] = useState(false);

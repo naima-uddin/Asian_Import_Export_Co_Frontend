@@ -1,5 +1,7 @@
+"use client";
+
 import React, { useState, useEffect } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation } from "@/lib/navigation";
 import ProductCategory from "./ProductCategory";
 import ProductSubcategory from "./ProductSubcategory";
 import ProductList from "./ProductList";

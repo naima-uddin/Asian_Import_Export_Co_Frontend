@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 // FloatingWhatsApp component to display a WhatsApp chat button
